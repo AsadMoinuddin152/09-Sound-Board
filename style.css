@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    color: #fff;
     background: rgb(238, 174, 202);
     background: radial-gradient(
         circle,
@@ -21,31 +22,65 @@ body {
     text-align: center;
     height: 100vh;
     padding: 5% 0;
+    background-image: url('./Images/stars-galaxy.jpg');
 }
 
 h1 {
     font-size: 2rem;
     margin: 0;
-    padding: 0;
+    padding: 5px 0;
+}
+
+h5 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 5px 0;
+    text-transform: capitalize;
+}
+
+p {
+    font-size: 1rem;
+    margin: 5px;
+    padding: 5px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.container {
+    margin: 5px;
+    padding: 10px;
+    font-size: 1rem;
 }
 
 .btns {
     border-radius: 5px;
+    color: #fff;
     border: none;
     cursor: pointer;
     margin: 1rem;
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 2.5rem;
     font-size: 1.2rem;
     border: 1px solid;
     font-family: inherit;
     background: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .btns:hover {
-    transform: scale(1.15);
+    transform: scale(1.05);
     opacity: 0.9;
 }
 
 .btns:focus {
     outline: none;
+}
+
+.btns:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(10px);
 }
